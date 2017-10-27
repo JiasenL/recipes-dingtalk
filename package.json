@@ -1,0 +1,12 @@
+{
+  "id": "dingtalk",
+  "name": "DingTalk",
+  "version": "1.0.0",
+  "description": "DingTalk",
+  "main": "index.js",
+  "author": "Jiasen <jiasenlow@gmail>",
+  "license": "MIT",
+  "config": {
+    "serviceURL": "https://im.dingtalk.com"
+  }
+}
