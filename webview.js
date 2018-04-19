@@ -1,19 +1,13 @@
 'use strict';
+// import ElectronStore from 'electron-store';
 
 const path = require('path');
 
 module.exports = Franz => {
   const getMessages = function getMessages() {
-    const elements = document.querySelectorAll('.unread');
-    let count = 0;
+    const elements = document.querySelectorAll('all-conv-unread-count.ng-isolate-scope');
+    let count = elements[0].innerText;
 
-    for (let i = 0; i < elements.length; i += 1) {
-      if (elements[i].querySelectorAll('.icon-muted').length === 0) {
-        count += 1;
-      }
-    }
-
-    // set Franz badge
     Franz.setBadge(count);
   };
 
