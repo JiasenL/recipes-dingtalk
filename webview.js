@@ -6,7 +6,8 @@ const path = require('path');
 module.exports = Franz => {
   const getMessages = function getMessages() {
     const elements = document.querySelectorAll('all-conv-unread-count.ng-isolate-scope');
-    let count = elements[0].innerText;
+    var count = 0;
+    count = parseInt(elements[0].innerText);
 
     Franz.setBadge(count);
   };
