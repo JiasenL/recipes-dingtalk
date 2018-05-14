@@ -85,3 +85,7 @@ body {
   ul.dingtalk-window-operations>li.window-close:before {
     content: "\e778";
   }
+
+  .client-download-guide{
+    display: none;
+  }
